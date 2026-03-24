@@ -1,20 +1,20 @@
 {
-  "name": "Mary Nails Art",
-  "short_name": "Mary",
+  "name": "YANEYSI LAGO salon_eres_bella_",
+  "short_name": "YANEYSI",
   "description": "Uñas y belleza - Tu espacio de cuidado personal",
-  "start_url": "/mary-nails-art/",
-  "scope": "/mary-nails-art/",
+  "start_url": "/yaneysi-lago-saloneresbella/",
+  "scope": "/yaneysi-lago-saloneresbella/",
   "display": "standalone",
   "background_color": "#ec4899",
   "theme_color": "#ec4899",
   "icons": [
     {
-      "src": "/mary-nails-art/icons/icon-192x192.png",
+      "src": "/yaneysi-lago-saloneresbella/icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/mary-nails-art/icons/icon-512x512.png",
+      "src": "/yaneysi-lago-saloneresbella/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }

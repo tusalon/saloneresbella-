@@ -1,12 +1,12 @@
 // utils/config-negocio.js - VERSIÓN MULTI-TENANT CORREGIDA
-// CLIENTE: Mary Nails Art
+// CLIENTE: YANEYSI LAGO salon_eres_bella_
 
 console.log('🏢 config-negocio.js cargado');
 
 // ============================================
 // 🔥 CONFIGURACIÓN POR CLIENTE - ¡LO ÚNICO QUE CAMBIA!
 // ============================================
-const NEGOCIO_ID_POR_DEFECTO = 'a628af8e-4d8b-4ec6-928d-765bcc53e6e3'; // ID de Mary Nails Art
+const NEGOCIO_ID_POR_DEFECTO = 'a82021db-d6ef-4ede-a20c-1dc8a73b26c2'; // ID de YANEYSI LAGO salon_eres_bella_
 
 // Hacer accesible globalmente
 window.NEGOCIO_ID_POR_DEFECTO = NEGOCIO_ID_POR_DEFECTO;
@@ -116,7 +116,7 @@ window.cargarConfiguracionNegocio = async function(forceRefresh = false) {
  */
 window.getNombreNegocio = async function() {
     const config = await window.cargarConfiguracionNegocio();
-    return config?.nombre || 'Mary Nails Art';
+    return config?.nombre || 'YANEYSI LAGO salon_eres_bella_';
 };
 
 /**
@@ -124,7 +124,7 @@ window.getNombreNegocio = async function() {
  */
 window.getTelefonoDuenno = async function() {
     const config = await window.cargarConfiguracionNegocio();
-    return config?.telefono || '56184486';
+    return config?.telefono || '55164035';
 };
 
 /**
@@ -132,7 +132,7 @@ window.getTelefonoDuenno = async function() {
  */
 window.getEmailNegocio = async function() {
     const config = await window.cargarConfiguracionNegocio();
-    return config?.email || 'mariadelcarmencruzc05@gmail.com';
+    return config?.email || 'yaneysilagocabrera@gmail.com';
 };
 
 /**
@@ -164,7 +164,7 @@ window.getHorarioAtencion = async function() {
  */
 window.getMensajeBienvenida = async function() {
     const config = await window.cargarConfiguracionNegocio();
-    return config?.mensaje_bienvenida || '¡Bienvenida a Mary Nails Art!';
+    return config?.mensaje_bienvenida || '¡Bienvenida a YANEYSI LAGO salon_eres_bella_!';
 };
 
 /**
@@ -180,7 +180,7 @@ window.getMensajeConfirmacion = async function() {
  */
 window.getNtfyTopic = async function() {
     const config = await window.cargarConfiguracionNegocio();
-    return config?.ntfy_topic || 'mary-nails-art';
+    return config?.ntfy_topic || 'yaneysi-lago-saloneresbella';
 };
 
 /**
@@ -205,5 +205,5 @@ setTimeout(async () => {
     await window.cargarConfiguracionNegocio();
 }, 500);
 
-console.log('✅ config-negocio.js listo para Mary Nails Art');
+console.log('✅ config-negocio.js listo para YANEYSI LAGO salon_eres_bella_');
 console.log('🏷️  ID configurado:', NEGOCIO_ID_POR_DEFECTO);

@@ -1,22 +1,22 @@
-// sw.js - Service Worker para Mary Nails Art
+// sw.js - Service Worker para YANEYSI LAGO salon_eres_bella_
 
-const CACHE_NAME = 'mary-nails-art-v1';
+const CACHE_NAME = 'yaneysi-lago-saloneresbella-v1';
 const urlsToCache = [
-  '/mary-nails-art/',
-  '/mary-nails-art/index.html',
-  '/mary-nails-art/admin.html',
-  '/mary-nails-art/admin-login.html',
-  '/mary-nails-art/setup-wizard.html',
-  '/mary-nails-art/editar-negocio.html',
-  '/mary-nails-art/manifest.json',
-  '/mary-nails-art/icons/icon-72x72.png',
-  '/mary-nails-art/icons/icon-96x96.png',
-  '/mary-nails-art/icons/icon-128x128.png',
-  '/mary-nails-art/icons/icon-144x144.png',
-  '/mary-nails-art/icons/icon-152x152.png',
-  '/mary-nails-art/icons/icon-192x192.png',
-  '/mary-nails-art/icons/icon-384x384.png',
-  '/mary-nails-art/icons/icon-512x512.png'
+  '/yaneysi-lago-saloneresbella/',
+  '/yaneysi-lago-saloneresbella/index.html',
+  '/yaneysi-lago-saloneresbella/admin.html',
+  '/yaneysi-lago-saloneresbella/admin-login.html',
+  '/yaneysi-lago-saloneresbella/setup-wizard.html',
+  '/yaneysi-lago-saloneresbella/editar-negocio.html',
+  '/yaneysi-lago-saloneresbella/manifest.json',
+  '/yaneysi-lago-saloneresbella/icons/icon-72x72.png',
+  '/yaneysi-lago-saloneresbella/icons/icon-96x96.png',
+  '/yaneysi-lago-saloneresbella/icons/icon-128x128.png',
+  '/yaneysi-lago-saloneresbella/icons/icon-144x144.png',
+  '/yaneysi-lago-saloneresbella/icons/icon-152x152.png',
+  '/yaneysi-lago-saloneresbella/icons/icon-192x192.png',
+  '/yaneysi-lago-saloneresbella/icons/icon-384x384.png',
+  '/yaneysi-lago-saloneresbella/icons/icon-512x512.png'
 ];
 
 // ============================================
@@ -108,7 +108,7 @@ self.addEventListener('fetch', event => {
           }
           // Si no hay cache y es imagen, devolver icon por defecto
           if (event.request.url.match(/\.(jpg|jpeg|png|gif|svg|webp)$/)) {
-            return caches.match('/mary-nails-art/icons/icon-192x192.png');
+            return caches.match('/yaneysi-lago-saloneresbella/icons/icon-192x192.png');
           }
           return new Response('Error de red', { status: 408 });
         });
@@ -138,6 +138,6 @@ self.addEventListener('message', event => {
   }
 });
 
-console.log('✅ Service Worker configurado para Mary Nails Art');
+console.log('✅ Service Worker configurado para YANEYSI LAGO salon_eres_bella_');
 console.log('📦 Cache:', CACHE_NAME);
 console.log('📄 Archivos a cachear:', urlsToCache.length);
